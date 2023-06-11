@@ -1,0 +1,58 @@
+@import '../../sass/colors.scss';
+@import '../../sass/font.scss';
+.welcomSection {
+	display: flex;
+	height: 963px;
+	.hero-img {
+		width: 100%;
+		max-width: 885px;
+		height: 100%;
+		background-image: url('../../../assets/Home-Hero-Image.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 66px;
+        margin-top: 342px;
+		width: 674px;
+		span {
+			font-family: $openSans;
+			font-size: 38px;
+			line-height: 55px;
+			text-align: center;
+            letter-spacing: -0.76px;
+		}
+		.decoration {
+			width: 253px;
+			height: 33px;
+			margin-top: 25px;
+			margin-bottom: 65px;
+			background: url('../../../assets/Decoration.svg');
+			color: $fifthColor;
+            
+		}
+		.buttonContainer {
+			display: flex;
+			gap: 44px;
+			button {
+				border: 0.75px solid $fifthColor;
+                background: none;
+                outline: unset;
+				width: 310px;
+				height: 120px;
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $fifthColor;
+                    font-size: 36px;
+                    font-family: $openSans;
+                    line-height: 45px;
+                    font-weight: 300;
+                }
+			}
+		}
+	}
+}

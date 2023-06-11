@@ -1,0 +1,54 @@
+@import '../sass/colors.scss';
+@import '../sass/font.scss';
+header {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+    z-index: 5;
+	.nav {
+		position: relative;
+		.navContainer {
+			display: grid;
+			position: absolute;
+			top: 37px;
+			right: 142px;
+			width: 683px;
+			.actionUser {
+				display: flex;
+				justify-self: end;
+				align-items: center;
+				gap: 20px;
+				a {
+					font-family: $openSans;
+					font-size: 14px;
+
+					color: $forthColor;
+					text-decoration: none;
+				}
+				a:nth-of-type(2) {
+					border: 0.75px solid #fad648;
+					padding: 9px 10px;
+				}
+			}
+			.navigation {
+				display: flex;
+				justify-self: flex-end;
+				align-items: center;
+				gap: 55px;
+				margin-top: 25px;
+				a {
+					font-family: $openSans;
+					font-size: 18px;
+					line-height: 24px;
+					color: $fifthColor;
+					text-decoration: none;
+				}
+				a:nth-of-type(1) {
+					border: 0.75px solid $fifthColor;
+					padding: 8px;
+				}
+			}
+		}
+	}
+}
