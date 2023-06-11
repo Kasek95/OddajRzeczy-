@@ -1,0 +1,91 @@
+@import '../sass/colors.scss';
+@import '../sass/font.scss';
+@import '../sass/mixin.scss';
+.Register {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 946px;
+	.registerContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 246px;
+		h2 {
+			font-size: 40px;
+			line-height: 55px;
+			letter-spacing: -0.8px;
+			font-family: $openSans;
+			color: $fifthColor;
+		}
+		.decoration {
+			@include decoration;
+		}
+		.formContainer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 503px;
+			height: 418px;
+			.formRegister {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 385px;
+				height: 328px;
+				background: $firstColor 0% 0% no-repeat padding-box;
+				margin-bottom: 40px;
+				.inputContainer {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					max-width: 250px;
+					label {
+						font-size: 16px;
+						font-weight: 600;
+						font-family: $openSans;
+						margin-bottom: 20px;
+					}
+					input {
+						outline: none;
+						border: none;
+						background: none;
+						border-bottom: 1px solid $fifthColor;
+					}
+				}
+				.inputContainer:nth-of-type(1) {
+					margin-bottom: 31px;
+				}
+                .inputContainer:nth-of-type(2) {
+					margin-bottom: 31px;
+				}
+			}
+			.btnContainer {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				button {
+					outline: none;
+					background: none;
+					border: none;
+					a {
+						text-decoration: none;
+						font-weight: 300;
+						font-family: $openSans;
+						font-size: 18px;
+						color: #000000;
+					}
+				}
+				button:nth-of-type(2) {
+					border: 1px solid $fifthColor;
+					padding: 13px 15px;
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
