@@ -1,17 +1,22 @@
 import React from 'react';
 import WelcomeSection from '../welcomSection/WelcomSection';
 import InfoAboutGivaweyItem from '../infoAbouGivaweyItem/InfoAboutGivawaey';
-import "./main.scss"
-const Main:React.FC = () => {
+import NextStep from '../nextStepSection/NextStep';
+import HowToDo from '../howToDoItSection/HowToDo';
+import AboutUs from '../aboutUs/AboutUs';
+import './main.scss';
+const Main: React.FC = () => {
 	return (
-        <>
-         <main>
-         <WelcomeSection/>
-         <InfoAboutGivaweyItem/>
-         </main>
-         
-        </>
-    )
+		<>
+			<main>
+				<WelcomeSection />
+				<InfoAboutGivaweyItem />
+				<NextStep />
+				<HowToDo />
+				<AboutUs />
+			</main>
+		</>
+	);
 };
 
 export default Main;

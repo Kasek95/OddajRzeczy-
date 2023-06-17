@@ -1,6 +1,41 @@
+@import '../../sass/font.scss';
+@import '../../sass/colors.scss';
+
 .InfoAboutGivawey {
-   .info {
-    background: url("../../../assets/3\ Columns\ Background.png");
-    height: 384px;
-   }
+	.info {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: url('../../../assets/3\ Columns\ Background.png');
+		height: 384px;
+		.infoContainer {
+			text-align: center;
+			width: 334px;
+			height: auto;
+			h2 {
+				font-weight: 300;
+				font-family: $openSans;
+				font-size: 90px;
+				letter-spacing: 0px;
+				color: #5e5322;
+			}
+			h3 {
+            font-weight: 500;
+				font-family: $openSans;
+				font-size: 18px;
+				letter-spacing: 0;
+				color: $fifthColor;
+				margin-bottom: 28px;
+            text-transform: uppercase;
+			}
+			p {
+				line-height: 28px;
+				font-size: 16px;
+				font-weight: 300;
+				font-family: $merriWeather;
+				letter-spacing: -0.32px;
+				color: $fifthColor;
+			}
+		}
+	}
 }

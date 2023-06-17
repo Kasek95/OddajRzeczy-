@@ -1,0 +1,65 @@
+@import '../../sass/colors.scss';
+@import '../../sass/font.scss';
+@import '../../sass/mixin.scss';
+.howToDo {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	.howToDoCont {
+		display: flex;
+		flex-direction: column;
+		.howToDoContainer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 130px;
+			background: $firstColor 0% 0% no-repeat padding-box;
+			height: 325px;
+			.dataContainer {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 130px;
+				height: 170px;
+				text-align: center;
+				img {
+					margin-bottom: 8px;
+				}
+				p:nth-of-type(1) {
+					font-size: 18px;
+					font-family: $openSans;
+					font-weight: 300;
+					color: $fifthColor;
+					margin-bottom: 5px;
+					letter-spacing: 0;
+					
+				}
+				p:nth-of-type(2) {
+					font-size: 16px;
+					font-family: $openSans;
+					font-weight: 300;
+					color: $fifthColor;
+					letter-spacing: 0;
+					}
+				hr {
+					width: 70%;
+				}
+			}
+		}
+		.btn {
+			text-align: center;
+			margin: 35px auto 80px auto;
+			padding: 13px 93px;
+			border: 1px solid $fifthColor;
+			background-color: unset;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 36px;
+				font-family: $openSans;
+				color: $fifthColor;
+			}
+		}
+	}
+}

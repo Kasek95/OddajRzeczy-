@@ -1,0 +1,25 @@
+@import "../../sass/colors.scss";
+@import "../../sass/font.scss";
+@import '../../sass/mixin.scss';
+.nextStep {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+	.nextStepContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2 {
+            font-weight: 400;
+            font-family: $openSans;
+            font-size: 38px;
+            letter-spacing: -0.78px;
+            margin-top: 55px;
+            color: $fifthColor;
+        }
+        .decoration {
+            @include decoration;
+        }
+	}
+}

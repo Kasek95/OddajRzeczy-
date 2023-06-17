@@ -1,0 +1,55 @@
+@import "../../sass/colors.scss";
+@import "../../sass/font.scss";
+@import "../../sass/mixin.scss";
+.aboutUS {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 935px;
+	.aboutUSContainer {
+        display: flex;
+		.LeftSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+			width: 50%;
+            background-color: $firstColor;
+            .leftSectionBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 657px;
+                .heading {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 38px;
+                    font-family: $openSans;
+                    color: $fifthColor;
+                   
+                }
+                .decoration {
+                    @include decoration;
+                }
+                p {
+                    font-size: 30px;
+                    font-family: $openSans;
+                    font-weight: 400;
+                    text-align: center;
+                    color: $fifthColor;
+                    margin-bottom: 40px;
+                }
+                img {
+					align-self: flex-end;
+				}
+            }
+		}
+		.rightSection {
+			background-image: url('../../../assets/People.jpg');
+			background-position: center;
+			background-size: cover;
+			width: 50%;
+			height: 100%;
+		}
+	}
+}
