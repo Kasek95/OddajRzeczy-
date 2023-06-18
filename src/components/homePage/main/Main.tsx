@@ -4,6 +4,7 @@ import InfoAboutGivaweyItem from '../infoAbouGivaweyItem/InfoAboutGivawaey';
 import NextStep from '../nextStepSection/NextStep';
 import HowToDo from '../howToDoItSection/HowToDo';
 import AboutUs from '../aboutUs/AboutUs';
+import WhoWeHelp from '../whoWeHelp/WhoWeHelp';
 import './main.scss';
 const Main: React.FC = () => {
 	return (
@@ -14,6 +15,7 @@ const Main: React.FC = () => {
 				<NextStep />
 				<HowToDo />
 				<AboutUs />
+				<WhoWeHelp />
 			</main>
 		</>
 	);
