@@ -55,6 +55,8 @@ const [fundation, setFundation] = useState(true);
 							<ReactPaginate
 								pageCount={fundationCount}
 								onPageChange={pageChange}
+								previousLinkClassName='previous'
+								nextLinkClassName='next'
 								containerClassName='paginationBtns'
 								disabledClassName='paginationDisabled'
 								activeClassName='paginationActive'
