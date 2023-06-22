@@ -1,0 +1,55 @@
+@import "../../sass/font.scss";
+@import "../../sass/mixin.scss";
+@import "../../sass/colors.scss";
+.contact {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 1026px;
+	.contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		height: 100%;
+		position: relative;
+		.headerImg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url('../../../assets/Background-Contact-Form.jpg');
+			opacity: 50%;
+			width: 100%;
+			height: 100%;
+		}
+		.formContainer {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+            justify-content: center;
+			align-self: flex-end;
+            align-items: center;
+			z-index: 10;
+            width: 528px;
+            margin-right: 142px;
+            h2 {
+                font-size: 38px;
+                color: $fifthColor;
+                font-size: $openSans;
+                font-weight: 400;
+                letter-spacing: -0.76px;
+            }
+            .decoration {
+                @include decoration;
+            }
+            .inputContainer {
+                display: flex;
+                margin-bottom: 40px;
+            }
+            .textAreaContainer {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
+		}
+	}
+}
