@@ -1,15 +1,16 @@
-@import "../../sass/font.scss";
-@import "../../sass/mixin.scss";
-@import "../../sass/colors.scss";
+@import '../../sass/font.scss';
+@import '../../sass/mixin.scss';
+@import '../../sass/colors.scss';
 .contact {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	height: 1026px;
 	.contactContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		height: 100%;
 		position: relative;
 		.headerImg {
@@ -25,31 +26,114 @@
 			position: relative;
 			display: flex;
 			flex-direction: column;
-            justify-content: center;
+			justify-content: center;
 			align-self: flex-end;
-            align-items: center;
+			align-items: center;
 			z-index: 10;
-            width: 528px;
-            margin-right: 142px;
-            h2 {
-                font-size: 38px;
+			width: 528px;
+			margin-right: 142px;
+			h2 {
+				font-size: 38px;
+				color: $fifthColor;
+				font-size: $openSans;
+				font-weight: 400;
+				letter-spacing: -0.76px;
+			}
+			.decoration {
+				@include decoration;
+			}
+			.form {
+				display: flex;
+				flex-direction: column;
+				.inputContainer {
+					display: flex;
+					gap: 16px;
+					margin-bottom: 40px;
+					.input {
+						width: 256px;
+						label {
+							font-size: 16px;
+							font-weight: 600;
+							font-family: $openSans;
+							color: $fifthColor;
+						}
+						input {
+							border: none;
+							border-bottom: 1px solid $fifthColor;
+							background: unset;
+							margin-top: 16px;
+							height: 24px;
+							width: 256px;
+							outline: none;
+						}
+						input::placeholder {
+							color: #3c3c3c26;
+							font-size: 18px;
+							font-family: $openSans;
+						}
+					}
+				}
+				.textAreaContainer {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 40px;
+					label {
+						font-size: 16px;
+						font-weight: 600;
+						font-family: $openSans;
+						color: $fifthColor;
+						margin-bottom: 12px;
+					}
+					textarea {
+						border: none;
+						border-bottom: 1px solid $fifthColor;
+						background-color: unset;
+						width: 100%;
+						height: 97px;
+						outline: none;
+					}
+					textarea::placeholder {
+						font-size: 18px;
+						font-family: $openSans;
+						color: #3c3c3c26;
+					}
+				}
+				button {
+					display: flex;
+					align-self: flex-end;
+					padding: 13px 52px;
+					background: unset;
+					border: 1px solid $fifthColor;
+					font-family: $openSans;
+					font-size: 18px;
+					font-weight: 300;
+				}
+			}
+		}
+		footer {
+            display: flex;
+            align-items: center;
+			position: absolute;
+			bottom: 12px;
+			width: 100%;
+			height: 30px;
+			span {
+                align-self: center;
                 color: $fifthColor;
-                font-size: $openSans;
-                font-weight: 400;
-                letter-spacing: -0.76px;
-            }
-            .decoration {
-                @include decoration;
-            }
-            .inputContainer {
-                display: flex;
-                margin-bottom: 40px;
-            }
-            .textAreaContainer {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 40px;
-            }
+				font-size: 18px;
+				text-align: center;
+                align-self: center;
+                margin-right: 587px;
+                margin-left: 886px;
+			}
+			.media {
+				display: flex;
+				gap:20px;
+				.icon {
+					height: 30px;
+					width: 30px;
+				}
+			}
 		}
 	}
 }

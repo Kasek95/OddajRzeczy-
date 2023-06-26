@@ -1,5 +1,7 @@
 import React from 'react';
 import './contact.scss';
+import {FaFacebookSquare} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
 const Contact: React.FC = () => {
 	return (
 		<section className='contact'>
@@ -29,7 +31,15 @@ const Contact: React.FC = () => {
                         <button>Wyślij</button>
 					</form>
 				</div>
+				<footer>
+				<span>Copyright by Coders Lab</span>
+				<div className='media'>
+					<FaFacebookSquare  className='icon'/>
+					<FaInstagram className='icon' />
+				</div>
+			</footer>
 			</article>
+			
 		</section>
 	);
 };
